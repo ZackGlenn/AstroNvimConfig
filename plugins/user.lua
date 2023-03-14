@@ -9,4 +9,12 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+
+  "lervag/vimtex",
+  {
+    "windwp/nvim-ts-autotag",
+    config = require("nvim-ts-autotag").setup {
+      filetypes = { "html", "xml", "markdown", "javascript", "typescript", "rust" },
+    },
+  },
 }

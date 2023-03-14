@@ -5,7 +5,7 @@ return {
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    signcolumn = "yes:2", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
   },
   g = {
@@ -16,6 +16,11 @@ return {
     diagnostics_mode = 3, -- set the visibility of diagnostics in the UI (0=off, 1=only show in status line, 2=virtual text off, 3=all on)
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
+    -- vimtex options
+    vimtex_view_method = "zathura",
+    vimtex_compiler_method = "tectonic",
+    -- visual jk toggle state
+    visual_jk = false,
   },
 }
 -- If you need more control, you can use the function()...end notation
