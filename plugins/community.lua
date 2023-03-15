@@ -1,3 +1,7 @@
+local extension_path = "/lib/codelldb/"
+local codelldb_path = extension_path .. "adapter/codelldb"
+local liblldb_path = extension_path .. "lldb/lib/liblldb.so"
+
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
@@ -7,11 +11,21 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.julia" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.rust" },
+  {
+    "rust-tools.nvim",
+    opts = function()
+      return {
+        dap = {
+          adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path),
+        },
+    }
+    end,
+  },
 }
