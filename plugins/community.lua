@@ -18,6 +18,7 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.yaml" },
   {
     "rust-tools.nvim",
     opts = function()
