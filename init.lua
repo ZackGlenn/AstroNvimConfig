@@ -53,7 +53,7 @@ return {
         return {
           cmd = { "typst-lsp" },
           filetypes = { "typst" },
-          root_dir = require("lspconfig.util").root_pattern ".",
+          root_dir = function(fname) return require("nvim-lspconfig").util.find_git_ancestor(fname) end,
         }
       end,
     },
