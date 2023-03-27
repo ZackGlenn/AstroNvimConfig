@@ -41,6 +41,8 @@ return {
     ["<leader>xX"] = { "<plug>(vimtex-reload-state)", desc = "Reload buffer state" },
     ["<leader>xs"] = { "<plug>(vimtex-toggle-main)", desc = "Toggle main file focus" },
     ["<leader>xa"] = { "<plug>(vimtex-context-menu)", desc = "Show context menu" },
+    -- telescope projects extension
+    ["<leader>fp"] = { require("telescope").extensions.projects.projects {}, desc = "Find Projects" },
     -- custom UI toggles
     ["<leader>uv"] = {
       function() -- toggle j -> gj and k -> gk
