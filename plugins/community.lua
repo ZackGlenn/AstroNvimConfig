@@ -1,7 +1,3 @@
-local extension_path = "/lib/codelldb/"
-local codelldb_path = extension_path .. "adapter/codelldb"
-local liblldb_path = extension_path .. "lldb/lib/liblldb.so"
-
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
@@ -22,6 +18,10 @@ return {
   {
     "rust-tools.nvim",
     opts = function()
+      local extension_path = vim.env.HOME .. "/.local/share/nvim/mason/packages/codelldb/extension/"
+      local codelldb_path = extension_path .. "adapter/codelldb"
+      local liblldb_path = extension_path .. "lldb/lib/liblldb.so"
+
       return {
         server = require("astronvim.utils.lsp").config "rust_analyzer",
         dap = {
