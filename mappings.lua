@@ -21,8 +21,8 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- navigate tabs
-    ["J"] = { ":bp<cr>", desc = "Previous tab" },
-    ["K"] = { ":bn<cr>", desc = "Next tab" },
+    ["K"] = { ":bp<cr>", desc = "Previous tab" },
+    ["J"] = { ":bn<cr>", desc = "Next tab" },
     -- vimtex mappings
     ["<leader>x"] = { name = "Latex" },
     ["<leader>xi"] = { "<plug>(vimtex-info)", desc = "Current project info" },
@@ -42,7 +42,7 @@ return {
     ["<leader>xs"] = { "<plug>(vimtex-toggle-main)", desc = "Toggle main file focus" },
     ["<leader>xa"] = { "<plug>(vimtex-context-menu)", desc = "Show context menu" },
     -- telescope projects extension
-    ["<leader>fp"] = { require("telescope").extensions.projects.projects {}, desc = "Find Projects" },
+    ["<leader>fp"] = { function() require("telescope").extensions.projects.projects {} end, desc = "Find Projects" },
     -- custom UI toggles
     ["<leader>uv"] = {
       function() -- toggle j -> gj and k -> gk

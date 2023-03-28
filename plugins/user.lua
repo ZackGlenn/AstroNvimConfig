@@ -12,15 +12,6 @@ return {
 
   { "lervag/vimtex", ft = "latex" },
   {
-    "ahmedkhalf/project.nvim",
-    requires = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim" },
-    lazy = false,
-    config = function()
-      require("project_nvim").setup {}
-      require("telescope").load_extension "projects"
-    end,
-  },
-  {
     "windwp/nvim-ts-autotag",
     config = require("nvim-ts-autotag").setup {
       filetypes = { "html", "xml", "markdown", "javascript", "typescript", "rust" },
