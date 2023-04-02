@@ -10,7 +10,6 @@ return {
   --   end,
   -- },
 
-  { "lervag/vimtex", ft = "latex" },
   {
     "ahmedkhalf/project.nvim",
     requires = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim" },
