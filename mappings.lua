@@ -21,8 +21,8 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- navigate tabs
-    ["K"] = { ":bp<cr>", desc = "Previous tab" },
-    ["J"] = { ":bn<cr>", desc = "Next tab" },
+    ["J"] = { ":bp<cr>", desc = "Previous tab" },
+    ["K"] = { ":bn<cr>", desc = "Next tab" },
     -- vimtex mappings
     ["<leader>x"] = { name = "Latex" },
     ["<leader>xi"] = { "<plug>(vimtex-info)", desc = "Current project info" },
