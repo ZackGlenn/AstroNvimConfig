@@ -10,7 +10,7 @@ return {
   --   end,
   -- },
 
-  { "lervag/vimtex", ft = "latex" },
+  { "lervag/vimtex", ft = "tex" },
   {
     "windwp/nvim-ts-autotag",
     config = require("nvim-ts-autotag").setup {
