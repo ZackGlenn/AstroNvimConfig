@@ -27,6 +27,7 @@ return {
     ["<leader>x"] = { name = "Latex" },
     ["<leader>xi"] = { "<plug>(vimtex-info)", desc = "Current project info" },
     ["<leader>xI"] = { "<plug>(vimtex-info-full)", desc = "All project info" },
+    ["<leader>xl"] = { "<plug>(vimtex-compile)", desc = "Compile" },
     ["<leader>xL"] = { "<plug>(vimtex-compile-selected)", desc = "Compile selected" },
     ["<leader>xk"] = { "<plug>(vimtex-stop)", desc = "Stop cont. compilation" },
     ["<leader>xK"] = { "<plug>(vimtex-stop-all)", desc = "Stop all  compilation" },

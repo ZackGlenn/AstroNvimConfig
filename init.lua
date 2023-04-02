@@ -49,15 +49,6 @@ return {
       -- "pyright"
       "typst_lsp",
     },
-    config = {
-      typst_lsp = function()
-        return {
-          cmd = { "typst-lsp" },
-          filetypes = { "typst" },
-          root_dir = function(fname) return require("nvim-lspconfig").util.find_git_ancestor(fname) end,
-        }
-      end,
-    },
     mappings = {
       n = {
         K = false,
