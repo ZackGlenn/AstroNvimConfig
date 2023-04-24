@@ -16,4 +16,8 @@ return {
       filetypes = { "html", "xml", "markdown", "javascript", "typescript", "rust" },
     },
   },
+  {
+    "kaarmu/typst.vim",
+    lazy = false,
+  },
 }
