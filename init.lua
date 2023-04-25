@@ -47,7 +47,7 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
-      "typst_lsp",
+      -- "typst_lsp",
     },
     mappings = {
       n = {
