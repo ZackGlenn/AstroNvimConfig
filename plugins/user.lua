@@ -20,4 +20,5 @@ return {
     "kaarmu/typst.vim",
     lazy = false,
   },
+  { "LiadOz/nvim-dap-repl-highlights" },
 }
