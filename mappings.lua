@@ -42,6 +42,7 @@ return {
     ["<leader>xX"] = { "<plug>(vimtex-reload-state)", desc = "Reload buffer state" },
     ["<leader>xs"] = { "<plug>(vimtex-toggle-main)", desc = "Toggle main file focus" },
     ["<leader>xa"] = { "<plug>(vimtex-context-menu)", desc = "Show context menu" },
+    ["<leader>xv"] = { "<plug>(vimtex-view)", desc = "Forward search" },
     -- telescope projects extension
     ["<leader>fp"] = { function() require("telescope").extensions.projects.projects {} end, desc = "Find Projects" },
     -- custom UI toggles
@@ -64,6 +65,7 @@ return {
     ["<leader>uL"] = {
       function()
         if vim.o.linebreak == false then
+        if vim.o.linebreak then
           vim.o.linebreak = false
           vim.notify("linebreak off", vim.log.levels.INFO, { title = "Custom" })
         else
