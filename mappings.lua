@@ -64,7 +64,6 @@ return {
     },
     ["<leader>uL"] = {
       function()
-        if vim.o.linebreak == false then
         if vim.o.linebreak then
           vim.o.linebreak = false
           vim.notify("linebreak off", vim.log.levels.INFO, { title = "Custom" })
