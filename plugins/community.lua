@@ -11,7 +11,7 @@ return {
   { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.utility.transparent-nvim" },
-  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.julia" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
