@@ -29,4 +29,9 @@ return {
     "andrewferrier/wrapping.nvim",
     config = function() require("wrapping").setup() end,
   },
+  {
+    "Aasim-A/scrollEOF.nvim",
+    config = function() require("scrollEOF").setup() end,
+    lazy = false,
+  },
 }
