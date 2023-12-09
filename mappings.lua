@@ -58,6 +58,10 @@ return {
       end,
       desc = "toggle linebreak",
     },
+    -- cursor centering
+    ["<C-u>"] = { "<C-u>zz", desc = "Half page up" },
+    ["<C-d>"] = { "<C-d>zz", desc = "Half page up" },
+    ["G"] = { "Gzz", desc = "To bottom of file" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
