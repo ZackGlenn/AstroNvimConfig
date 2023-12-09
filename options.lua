@@ -8,6 +8,7 @@ return {
     signcolumn = "yes:2", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
     shell = "/usr/bin/fish",
+    scrolloff = 8,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
