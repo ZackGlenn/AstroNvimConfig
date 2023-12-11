@@ -8,6 +8,7 @@ return {
     signcolumn = "yes:2", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
     shell = "/usr/bin/fish",
+    scrolloff = 8,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -20,8 +21,7 @@ return {
     -- vimtex options
     vimtex_view_method = "zathura",
     vimtex_compiler_method = "tectonic",
-    -- visual jk toggle state
-    visual_jk = false,
+    vimtex_quickfix_open_on_warning = 0,
   },
 }
 -- If you need more control, you can use the function()...end notation

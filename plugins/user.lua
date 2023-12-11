@@ -20,4 +20,18 @@ return {
     "kaarmu/typst.vim",
     lazy = false,
   },
+  {
+    "LiadOz/nvim-dap-repl-highlights",
+    config = function() require("nvim-dap-repl-highlights").setup() end,
+    lazy = false,
+  },
+  {
+    "andrewferrier/wrapping.nvim",
+    config = function() require("wrapping").setup() end,
+  },
+  {
+    "Aasim-A/scrollEOF.nvim",
+    config = function() require("scrollEOF").setup() end,
+    lazy = false,
+  },
 }

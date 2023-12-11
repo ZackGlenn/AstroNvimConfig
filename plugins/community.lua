@@ -1,6 +1,6 @@
 return {
   -- Add the community repository of plugin specifications
-  { "AstroNvim/astrocommunity", version = "*" },
+  { "AstroNvim/astrocommunity" },
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
@@ -10,7 +10,7 @@ return {
   { import = "astrocommunity.project.project-nvim" },
   { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
-  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.julia" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },

@@ -42,28 +42,13 @@ return {
     ["<leader>xX"] = { "<plug>(vimtex-reload-state)", desc = "Reload buffer state" },
     ["<leader>xs"] = { "<plug>(vimtex-toggle-main)", desc = "Toggle main file focus" },
     ["<leader>xa"] = { "<plug>(vimtex-context-menu)", desc = "Show context menu" },
+    ["<leader>xv"] = { "<plug>(vimtex-view)", desc = "Forward search" },
     -- telescope projects extension
-    ["<leader>fp"] = { function() require("telescope").extensions.projects.projects {} end, desc = "Find Projects" },
+    ["<leader>fp"] = { function() require("telescope").extensions.projects.projects {} end, desc = "Find projects" },
     -- custom UI toggles
-    ["<leader>uv"] = {
-      function() -- toggle j -> gj and k -> gk
-        if vim.g.visual_jk then
-          vim.keymap.set("n", "j", "j")
-          vim.keymap.set("n", "k", "k")
-          vim.g.visual_jk = false
-          vim.notify("visual line nav off", vim.log.levels.INFO, { title = "Custom" })
-        else
-          vim.keymap.set("n", "j", "gj")
-          vim.keymap.set("n", "k", "gk")
-          vim.g.visual_jk = true
-          vim.notify("visual line nav on", vim.log.levels.INFO, { title = "Custom" })
-        end
-      end,
-      desc = "toggle visual line navigation",
-    },
     ["<leader>uL"] = {
       function()
-        if vim.o.linebreak == false then
+        if vim.o.linebreak then
           vim.o.linebreak = false
           vim.notify("linebreak off", vim.log.levels.INFO, { title = "Custom" })
         else
@@ -73,6 +58,10 @@ return {
       end,
       desc = "toggle linebreak",
     },
+    -- cursor centering
+    ["<C-u>"] = { "<C-u>zz", desc = "Half page up" },
+    ["<C-d>"] = { "<C-d>zz", desc = "Half page up" },
+    ["G"] = { "Gzz", desc = "Move to file end" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
