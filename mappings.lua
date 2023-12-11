@@ -44,7 +44,7 @@ return {
     ["<leader>xa"] = { "<plug>(vimtex-context-menu)", desc = "Show context menu" },
     ["<leader>xv"] = { "<plug>(vimtex-view)", desc = "Forward search" },
     -- telescope projects extension
-    ["<leader>fp"] = { function() require("telescope").extensions.projects.projects {} end, desc = "Find Projects" },
+    ["<leader>fp"] = { function() require("telescope").extensions.projects.projects {} end, desc = "Find projects" },
     -- custom UI toggles
     ["<leader>uL"] = {
       function()
@@ -61,7 +61,7 @@ return {
     -- cursor centering
     ["<C-u>"] = { "<C-u>zz", desc = "Half page up" },
     ["<C-d>"] = { "<C-d>zz", desc = "Half page up" },
-    ["G"] = { "Gzz", desc = "To bottom of file" },
+    ["G"] = { "Gzz", desc = "Move to file end" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
