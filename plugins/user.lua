@@ -26,12 +26,24 @@ return {
     lazy = false,
   },
   {
-    "andrewferrier/wrapping.nvim",
-    config = function() require("wrapping").setup() end,
-  },
-  {
     "Aasim-A/scrollEOF.nvim",
     config = function() require("scrollEOF").setup() end,
     lazy = false,
+  },
+  {
+    "epwalsh/obsidian.nvim",
+    event = {
+      "BufReadPre " .. vim.fn.expand "~" .. "/Documents/TheVault/**.md",
+      "BufNewFile " .. vim.fn.expand "~" .. "/Documents/TheVault/**.md",
+    },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    opts = {
+      dir = vim.env.HOME .. "/Documents/TheVault",
+      disable_frontmatter = true,
+    },
   },
 }
