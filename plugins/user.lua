@@ -54,6 +54,17 @@ return {
       "MunifTanjim/nui.nvim",
       "nvim-treesitter/nvim-treesitter",
     },
-    config = function() require("papis").setup {} end,
+    lazy = false,
+    config = function()
+      require("papis").setup {
+        papis_python = {
+          dir = "/home/zack/Documents/School/Thesis/thesis_refs",
+          info_name = "info.yaml",
+          notes_name = [[notes.org]],
+        },
+        init_filenames = { "%info_name%", "*.tex" },
+        yq_bin = "/home/zack/.local/share/nvim/mason/bin/yq",
+      }
+    end,
   },
 }
